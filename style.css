@@ -3,27 +3,29 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #2c3e50;
-    background-color: #f7f8fa;
+    background-color: #0f3d2e;     /* DEEP FOREST GREEN */
+    color: #ecf0f1;                 /* Light text for contrast */
     line-height: 1.7;
 }
 
-/* PAGE WRAPPER */
+/* PAGE WRAPPER (white card) */
 .container {
     max-width: 850px;
     margin: 60px auto;
     background: #ffffff;
     padding: 40px 50px;
     border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    color: #2c3e50;   /* Dark text inside card */
 }
 
 /* HEADER */
 header {
-    background: #2c3e50;
+    background: #14533d;           /* Deep green header */
     color: white;
     padding: 25px 50px;
     text-align: center;
+    border-bottom: 4px solid #0b2d22;
 }
 
 header h1 {
@@ -39,7 +41,7 @@ nav {
 }
 
 nav a {
-    color: #ecf0f1;
+    color: #d4fbe5;                /* Soft mint-green text */
     text-decoration: none;
     margin: 0 15px;
     font-size: 1rem;
@@ -53,7 +55,7 @@ nav a:hover {
 /* TYPOGRAPHY */
 h2 {
     margin-top: 35px;
-    color: #34495e;
+    color: #14533d;
 }
 
 p {
@@ -61,54 +63,45 @@ p {
     font-size: 1.05rem;
 }
 
-/* BUTTON-STYLE LINKS */
-a.button {
+/* BUTTONS */
+a.button,
+button.button {
     display: inline-block;
     padding: 12px 20px;
-    background-color: #2980b9;
+    background-color: #1e7f5a;       /* Medium green button */
     color: white !important;
     border-radius: 6px;
     text-decoration: none;
     margin-top: 10px;
+    font-weight: bold;
 }
 
-a.button:hover {
-    background-color: #1f6a96;
+a.button:hover,
+button.button:hover {
+    background-color: #176446;       /* Darker green hover */
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    color: #7f8c8d;
+    color: #d4fbe5;
     font-size: 0.9rem;
-    margin-top: 40px;
-}
-/* NAVIGATION (UPDATED FOR MOBILE) */
-nav {
-    margin-top: 10px;
 }
 
-nav a {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-/* HAMBURGER ICON */
+/* RESPONSIVE MENU */
 .hamburger {
     display: none;
     font-size: 2rem;
     cursor: pointer;
 }
 
-/* HEADER LAYOUT */
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* MOBILE MENU CLOSED BY DEFAULT */
 #nav-menu {
     transition: max-height 0.3s ease-out;
 }
@@ -124,6 +117,7 @@ nav a {
 
     .hamburger {
         display: block;
+        color: #d4fbe5;
     }
 
     #nav-menu {
