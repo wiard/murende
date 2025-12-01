@@ -41,15 +41,25 @@ nav {
 }
 
 nav a {
-    color: #d4fbe5;                /* Soft mint-green text */
+    color: #d4fbe5;                /* Soft mint green */
     text-decoration: none;
     margin: 0 15px;
     font-size: 1rem;
     font-weight: bold;
+    transition: color 0.2s ease;
 }
 
+/* Hover effect */
 nav a:hover {
+    color: #ffffff;
     text-decoration: underline;
+}
+
+/* ACTIVE MENU ITEM (HIGHLIGHT IN GOLD/YELLOW) */
+nav a.active {
+    color: #ffd700;                /* GOLDEN YELLOW */
+    border-bottom: 3px solid #ffd700;
+    padding-bottom: 3px;
 }
 
 /* TYPOGRAPHY */
@@ -74,6 +84,7 @@ button.button {
     text-decoration: none;
     margin-top: 10px;
     font-weight: bold;
+    transition: background 0.2s ease;
 }
 
 a.button:hover,
@@ -126,6 +137,6 @@ footer {
     }
 
     #nav-menu.open {
-        max-height: 300px;
+        max-height: 300px;  /* expands when opened */
     }
 }
